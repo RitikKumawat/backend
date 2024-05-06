@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin:"https://deployed-flipr.vercel.app",
+    origin:"*",
     credentials:true
 }
 ));
