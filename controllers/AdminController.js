@@ -3,7 +3,7 @@ const { default: mongoose } = require("mongoose");
 const MongoDBInstance = require("../models/MongoDBInstance");
 const User = require("../models/User");
 const Database = require("../models/Database");
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 exports.createInstance = async(req,res)=>{
     try {
         const {host,port} = req.body;
